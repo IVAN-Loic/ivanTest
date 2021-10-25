@@ -52,11 +52,22 @@ mvn spring-boot:run
  "email": "NAME@gmail.com" 
 }
 ```
+RETURN
+```yaml
+{
+    "id": 1,
+    "name": "NAME",
+    "email": "NAME@gmail.com",
+    "actived": false
+}
+```
+
 ### UPDATE PERSON
 
-- Open your postman application in **localhost:8080/api/persons/{ID}**
+- Open your postman application in **localhost:8080/api/persons/{id}**
 - METHOD:**PUT**
 - BODY: raw - type **JSON**
+- ID: 1
 
 ```yaml
 {
@@ -65,11 +76,44 @@ mvn spring-boot:run
  "actived": true
 }
 ```
+RETURN
+```yaml
+{
+    "id": 1,
+    "name": "NAME",
+    "email": "NAME@gmail.com",
+    "actived": true
+}
+```
+
 ### GET ALL PERSONS
 
 - Open your postman application in **localhost:8080/api/persons/**
 - METHOD:**GET**
 - BODY: EMPTY
+RETURN
+```yaml
+[
+    {
+        "id": 1,
+        "name": "NAME",
+        "email": "NAME@gmail.com",
+        "actived": true
+    },
+    {
+        "id": 2,
+        "name": "NAME2",
+        "email": "NAME2@gmail.com",
+        "actived": false
+    },
+    {
+        "id": 3,
+        "name": "NAME3",
+        "email": "NAME3@gmail.com",
+        "actived": false
+    }
+]
+```
 
 ### GET ONLY ACTIVED PERSONS
 
@@ -77,14 +121,45 @@ mvn spring-boot:run
 - METHOD:**GET**
 - BODY: EMPTY
 
+```yaml
+[
+    {
+        "id": 1,
+        "name": "NAME",
+        "email": "NAME@gmail.com",
+        "actived": true
+    }
+]
+```
+### GET PERSONS BY EMAIL FILTER
+
+- Open your postman application in **localhost:8080/api/persons?email={query}**
+- METHOD:**GET**
+- BODY: EMPTY
+- email: 2
+
+RETURN
+```yaml
+[
+    {
+        "id": 2,
+        "name": "NAME2",
+        "email": "NAME2@gmail.com",
+        "actived": false
+    }
+]
+```
+
 ### DELETE ONE PERSON
 
 - Open your postman application in **localhost:8080/api/persons/{id}**
 - METHOD:**DELETE**
 - BODY: EMPTY
+- RETURN: **204 No Content**
 
 ### DELETE ALL PERSONS
 
 - Open your postman application in **localhost:8080/api/persons/**
 - METHOD:**DELETE**
 - BODY: EMPTY
+- RETURN: **204 No Content**
