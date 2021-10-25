@@ -26,6 +26,14 @@ In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Mav
 - **Person** - Represents the model entity Person with your attributes.
 - **RestCrudSpringBootApplication** - The main class of SpringBoot application
 
+### DATABASE Configurations
+
+- application.properties - all database configurations 
+- To acess de database console - **localhost:8080/h2-console**
+- JDBC URL:	jdbc:h2:mem:restcrud
+- User Name:	admin
+- Password:	admin
+
 
 ### Run Spring Boot application
 ```
