@@ -52,7 +52,7 @@ mvn spring-boot:run
  "email": "NAME@gmail.com" 
 }
 ```
-RETURN
+- RETURN
 ```yaml
 {
     "id": 1,
@@ -76,7 +76,7 @@ RETURN
  "actived": true
 }
 ```
-RETURN
+- RETURN
 ```yaml
 {
     "id": 1,
@@ -91,7 +91,7 @@ RETURN
 - Open your postman application in **localhost:8080/api/persons/**
 - METHOD:**GET**
 - BODY: EMPTY
-RETURN
+- RETURN
 ```yaml
 [
     {
@@ -138,7 +138,7 @@ RETURN
 - BODY: EMPTY
 - email: 2
 
-RETURN
+- RETURN
 ```yaml
 [
     {
