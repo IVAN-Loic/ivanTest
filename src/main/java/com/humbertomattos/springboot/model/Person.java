@@ -1,4 +1,4 @@
-package com.humbertomattos.restCRUDSpringBoot.model;
+package com.humbertomattos.springboot.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,4 +1,4 @@
-package com.humbertomattos.restCRUDSpringBoot.controller;
+package com.humbertomattos.springboot.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.humbertomattos.restCRUDSpringBoot.model.Person;
-import com.humbertomattos.restCRUDSpringBoot.repository.PersonRepository;
+import com.humbertomattos.springboot.model.Person;
+import com.humbertomattos.springboot.repository.PersonRepository;
 
 @CrossOrigin(origins = "http://localhost:8080")
 @RestController
