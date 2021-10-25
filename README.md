@@ -1,4 +1,4 @@
-#Spring Boot REST CRUD example
+# Spring Boot REST CRUD example
 
 In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Maven that use Spring Data JPA with H2 database. You'll know:
 
@@ -7,7 +7,7 @@ In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Mav
 - Create Spring Rest Controller to HTTP requests
 - Use Spring Data JPA
 
-###Technologies
+### Technologies
 
 > [H2 Database](https://www.h2database.com/html/quickstart.html)
 
@@ -19,7 +19,7 @@ In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Mav
 
 > [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
-###Main Classes
+### Main Classes
 
 - **PersonController** - Responsible to receive all requests and provides all responses in JSON Format
 - **PersonRepository** extends JPARepository - Responsible to make all database operations 
@@ -27,12 +27,12 @@ In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Mav
 - **RestCrudSpringBootApplication** - The main class of SpringBoot application
 
 
-###Run Spring Boot application
+### Run Spring Boot application
 ```
 mvn spring-boot:run
 ```
 
-###CREATE PERSON
+### CREATE PERSON
 
 - Open your postman application in **localhost:8080/api/persons**
 - METHOD: **POST**
@@ -44,7 +44,7 @@ mvn spring-boot:run
  "email": "NAME@gmail.com" 
 }
 ```
-###UPDATE PERSON
+### UPDATE PERSON
 
 - Open your postman application in **localhost:8080/api/persons/{ID}**
 - METHOD:**PUT**
@@ -57,25 +57,25 @@ mvn spring-boot:run
  "actived": true
 }
 ```
-###GET ALL PERSONS
+### GET ALL PERSONS
 
 - Open your postman application in **localhost:8080/api/persons/**
 - METHOD:**GET**
 - BODY: EMPTY
 
-###GET ONLY ACTIVED PERSONS
+### GET ONLY ACTIVED PERSONS
 
 - Open your postman application in **localhost:8080/api/persons/actived/**
 - METHOD:**GET**
 - BODY: EMPTY
 
-###DELETE ONE PERSON
+### DELETE ONE PERSON
 
 - Open your postman application in **localhost:8080/api/persons/{id}**
 - METHOD:**DELETE**
 - BODY: EMPTY
 
-###DELETE ALL PERSONS
+### DELETE ALL PERSONS
 
 - Open your postman application in **localhost:8080/api/persons/**
 - METHOD:**DELETE**
