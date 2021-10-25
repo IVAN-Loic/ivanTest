@@ -39,6 +39,7 @@ In this tutorial, we're gonna build a Spring Boot Rest CRUD API example with Mav
 ```
 mvn spring-boot:run
 ```
+> Download [POSTMAN](https://www.postman.com/downloads/) for JSON requests.
 
 ### CREATE PERSON
 
